@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudySamples.ConsoleUi.Helpers;
+using System;
 
 namespace StudySamples.ConsoleUi
 {
@@ -6,7 +7,10 @@ namespace StudySamples.ConsoleUi
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var array = ArrayHelper.GetRandomIntArray();
+            ArrayHelper.PrintIntArray(array);
+
+            Console.ReadKey();
         }
     }
 }
